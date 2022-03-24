@@ -1,0 +1,89 @@
+1. show databases;
+2. create database database_name;
+3. use database_name;
+4. create table table_name;
+5. show tables;
+6. select * from table_name;
+
+
+
+
+
+  Enter password: **********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 22
+Server version: 8.0.28 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databasesint(input("Enter the first num"))int(input("Enter the first num"))int(input("Enter the first num"))int(input("Enter the first num"))int(input("Enter the first num"));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databasesint(input("Enter the first num"))int(input("Enter the first num"))int(i' at line 1
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| emp                |
+| information_schema |
+| mysql              |
+| performance_schema |
+| school             |
+| sys                |
++--------------------+
+6 rows in set (0.08 sec)
+
+mysql> create database student;
+Query OK, 1 row affected (0.03 sec)
+
+mysql> show databases
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    ->
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| emp                |
+| information_schema |
+| mysql              |
+| performance_schema |
+| school             |
+| student            |
+| sys                |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> create table detail;
+ERROR 1046 (3D000): No database selected
+mysql> use student;
+Database changed
+mysql> create table detail(
+    -> name varchar(30),
+    -> age integer,
+    -> marks integer
+    -> );
+Query OK, 0 rows affected (0.21 sec)
+
+mysql> show tables;
++-------------------+
+| Tables_in_student |
++-------------------+
+| detail            |
++-------------------+
+1 row in set (0.02 sec)
+
+mysql> select * from detail;
+Empty set (0.01 sec)
+
+mysql>
